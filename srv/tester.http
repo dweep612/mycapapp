@@ -1,0 +1,89 @@
+###Get the service document
+http://localhost:4004/odata/v4/CatalogService
+Authorization: Basic dweep:
+
+###Get metadata
+http://localhost:4004/odata/v4/CatalogService/$metadata
+
+###Get call to show all employee data
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vNzdhYzMwNjR0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktZDkwZGNhMjE0OSIsInR5cCI6IkpXVCIsImppZCI6ICJhQ1JlSEN4U3R5b05ESlJzKzFKU2pWc0hXY2VzcEM3SkdmRUVmNHNSM01FPSJ9.eyJqdGkiOiJlZDU2MjBmNjI2Nzk0NmVlOWNlYWU1MDE3MWYwNGY0ZSIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiIzMjM3MzhmMy1jMTdmLTRmMmMtYjM0Yi05YzljZTllZTkyOWMiLCJ6ZG4iOiI3N2FjMzA2NHRyaWFsIn0sInVzZXJfdXVpZCI6IjU3Mjg3YTQzLTM2ZDMtNGZiNi05ZDJhLTU4MTIzODMwMDYyMSIsInhzLnVzZXIuYXR0cmlidXRlcyI6eyJCYW5rTmFtZSI6WyJNeSBCYW5rIG9mIFNhbiBGcmFuY2lzY28iXSwiQ291bnRyeSI6WyJJTiIsIkpQIiwiVVMiXX0sInhzLnN5c3RlbS5hdHRyaWJ1dGVzIjp7InhzLnJvbGVjb2xsZWN0aW9ucyI6WyJTdWJhY2NvdW50IFNlcnZpY2UgQWRtaW5pc3RyYXRvciIsIlNBUCBIQU5BIENsb3VkIFZpZXdlciIsIlJDX015Q2FwQXBwIiwiU0FQIEhBTkEgQ2xvdWQgQWRtaW5pc3RyYXRvciIsIlN1YmFjY291bnQgVmlld2VyIiwiQnVzaW5lc3NfQXBwbGljYXRpb25fU3R1ZGlvX0RldmVsb3BlciIsIkNsb3VkIENvbm5lY3RvciBBZG1pbmlzdHJhdG9yIiwiRGVzdGluYXRpb24gQWRtaW5pc3RyYXRvciIsIkJ1c2luZXNzX0FwcGxpY2F0aW9uX1N0dWRpb19FeHRlbnNpb25fRGVwbG95ZXIiLCJCdXNpbmVzc19BcHBsaWNhdGlvbl9TdHVkaW9fQWRtaW5pc3RyYXRvciIsIlN1YmFjY291bnQgQWRtaW5pc3RyYXRvciIsIkNvbm5lY3Rpdml0eSBhbmQgRGVzdGluYXRpb24gQWRtaW5pc3RyYXRvciIsIlNBUCBIQU5BIENsb3VkIFNlY3VyaXR5IEFkbWluaXN0cmF0b3IiXX0sImdpdmVuX25hbWUiOiJEd2VlcCIsImZhbWlseV9uYW1lIjoiUGFuY2hhbCIsInN1YiI6ImQ4YTU0ZTBkLWMzMWUtNGM3Ni1hNGMwLTQzNzE3OTk1NDhhNSIsInNjb3BlIjpbIm9wZW5pZCIsIm15Y2FwYXBwLTc3YWMzMDY0dHJpYWwtZGV2IXQ0NzAzNTUuRWRpdCIsIm15Y2FwYXBwLTc3YWMzMDY0dHJpYWwtZGV2IXQ0NzAzNTUuRGlzcGxheSIsIm15Y2FwYXBwLTc3YWMzMDY0dHJpYWwtZGV2IXQ0NzAzNTUuQm9vc3QiXSwiY2xpZW50X2lkIjoic2ItbXljYXBhcHAtNzdhYzMwNjR0cmlhbC1kZXYhdDQ3MDM1NSIsImNpZCI6InNiLW15Y2FwYXBwLTc3YWMzMDY0dHJpYWwtZGV2IXQ0NzAzNTUiLCJhenAiOiJzYi1teWNhcGFwcC03N2FjMzA2NHRyaWFsLWRldiF0NDcwMzU1IiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImQ4YTU0ZTBkLWMzMWUtNGM3Ni1hNGMwLTQzNzE3OTk1NDhhNSIsIm9yaWdpbiI6InNhcC5kZWZhdWx0IiwidXNlcl9uYW1lIjoicGFuY2hhbGR3ZWVwQGdtYWlsLmNvbSIsImVtYWlsIjoicGFuY2hhbGR3ZWVwQGdtYWlsLmNvbSIsImF1dGhfdGltZSI6MTc1MDc2OTYzMywicmV2X3NpZyI6IjNmYmZiNjgwIiwiaWF0IjoxNzUwNzY5NjMzLCJleHAiOjE3NTA3NzA1MzMsImlzcyI6Imh0dHBzOi8vNzdhYzMwNjR0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL29hdXRoL3Rva2VuIiwiemlkIjoiMzIzNzM4ZjMtYzE3Zi00ZjJjLWIzNGItOWM5Y2U5ZWU5MjljIiwiYXVkIjpbIm15Y2FwYXBwLTc3YWMzMDY0dHJpYWwtZGV2IXQ0NzAzNTUiLCJvcGVuaWQiLCJzYi1teWNhcGFwcC03N2FjMzA2NHRyaWFsLWRldiF0NDcwMzU1Il19.Tj_X7V2cd8uEhCNGVCkAQO2Hj7SFugyW4kVJxoNByHvz0M3sF9nVhzLoFD3a7Q8pxv71qtYEWDWucFivA_Y4aKz3mPKCcQTydRXd7NfvJHQpCA6t5NudTZykcBNbXzsYz5ZyLOOrjbw8bPrFWXuKzEvnb5wah31OzYjEsFsxFepOmDGX1ud-H1RfUaQYvhst_AZGJ6mo49arwCbHQrV0S9qyYyfwWu-8dpy2b57F6RGk_iOaPt-EwerPNp7L8pZ8SHBBlyj7La5lvJ9fJT_zS7BXul99JwJbhtQClNVPT4WLUFSH7JrPLlqQMSWkjZZGks09VPRuX0vNR2El2PRvXw
+
+###Get call to show all address data
+http://localhost:4004/odata/v4/CatalogService/AddressSet
+Authorization: Basic ananya:
+
+###Get call to show all employee count - $count
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/$count
+
+###Get call for pagination - $top,$skip
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$top=2&$skip=2
+
+###Select few fields - $select
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$select=nameFirst,nameLast,loginName
+
+###Get single record
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet('1f1f5b78-56b4-4009-8382-4cfceb85f21e')
+
+###POST - Create New Employee
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Content-Type: application/json
+
+{
+  "nameFirst": "Dweep",
+  "nameMiddle": null,
+  "nameLast": "Panchal",
+  "nameInitials": "Mr",
+  "sex": "M",
+  "language": "E",
+  "phoneNumber": "1224374524",
+  "email": "dweep.panchal@itelo.com",
+  "loginName": "dpanchal",
+  "currency_code": "USD",
+  "salaryAmount": 50000,
+  "accountNumber": "111222333",
+  "bankId": "51000065",
+  "bankName": "My Bank of Antioch"
+}
+
+###PATCH - Update the Data
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet('7b6889f3-5270-4fd5-892d-30f0c2dfb1e6')
+Content-Type: application/json
+
+{
+  "salaryAmount": 1500000,
+  "bankName": "My Bank of Antioch"
+}
+
+###Read newly create employee
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet('bad6c116-d22b-4b3b-9576-b8ab846c50e5')
+
+###DELETE
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSet('bad6c116-d22b-4b3b-9576-b8ab846c50e5')
+
+###GET Product Data
+http://localhost:62238/odata/v4/CatalogService/ProductSet
+
+###GET Single Product Data
+http://localhost:62238/odata/v4/CatalogService/ProductSet/74867AD200E41EDBA5D8B06B26EBC052
+
+###GET Single Product Data and its order data - mixin - lazy loading
+http://localhost:62238/odata/v4/CatalogService/ProductSet/74867AD200E41EDBA5D8B06B26EBC052?$expand=To_Items
+
+###GET PO Data
+http://localhost:4004/odata/v4/CatalogService/POSet
+Authorization: Basic dweep:
+
+###GET Single PO Data
+http://localhost:4004/odata/v4/CatalogService/POSet/02BD2137-0890-1EEA-A6C2-BB55C1978999
+Authorization: Basic dweep:
+
+###Call the function - non instance bound
+http://localhost:4004/odata/v4/CatalogService/getMostExpensiveOrder()
+
+###Call the Action - instance bound
+POST http://localhost:4004/odata/v4/CatalogService/POSet/02BD2137-0890-1EEA-A6C2-BB55C1978999/CatalogService.boost
+Authorization: Basic ananya:
+Content-Type: application/json
+
+{}
